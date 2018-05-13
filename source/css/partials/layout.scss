@@ -1,0 +1,24 @@
+body {
+    height: 100%;
+    font-family: 'Geometria', sans-serif;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+html,
+body { height: 100%; }
+
+body {
+  display: table;
+  width: 100%;
+}
+
+.header, .footer, .main {
+  display: table-row;
+  height: 1px;
+}
+
+.main { height: 100%; }
