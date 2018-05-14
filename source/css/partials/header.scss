@@ -1,0 +1,33 @@
+.header {
+    &__wrapper {
+        border-bottom: 1px solid $GRAYC;
+        padding: $PAD;
+        width: calc(100% - #{$PAD*2});
+    }
+    &__logo {
+        border: none;
+        text-decoration: none;
+    }
+    &__container {
+        display: flex;
+        align-items: center;
+        min-height: 76px;
+        justify-content: space-between;
+    }
+    &__reg-link {
+        display: inline-block;
+        margin-right: 30px;
+        -webkit-appearance: none;
+        border: none;
+        text-decoration: none;
+        color: $PC;
+    }
+}
+.logo {
+    display: block;
+    width: 278px;
+    height: 25px;
+    background: url(../images/logo.svg) no-repeat center;
+    background-size: cover;
+}
+

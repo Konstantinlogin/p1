@@ -144,10 +144,10 @@ let baseConfig = {
             })
         }, {
             test: /\.(jpe?g|png|gif|svg)$/i,
-            use: ['file-loader?name=/images/[name].[ext]']
+            use: ['file-loader?name=../images/[name].[ext]']
         }, {
             test: /\.(ttf|eot|woff|woff2)$/,
-            use: ['file-loader?name=/fonts/[name].[ext]']
+            use: ['file-loader?name=../fonts/[name].[ext]']
         }]
     },
     plugins: plugins
