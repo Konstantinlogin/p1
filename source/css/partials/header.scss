@@ -3,10 +3,19 @@
         border-bottom: 1px solid $GRAYC;
     }
     &__container {
-        display: flex;
-        align-items: center;
-        min-height: 90px;
-        justify-content: space-between;
+        text-align: justify;
+        height: 90px;
+        line-height: 90px;
+        &:after {
+            content: '';
+            display: inline-block;
+            width: 100%;
+        }
+    }
+    &__logo, &__menu, &__auth {
+        display: inline-block;
+        vertical-align: middle;
+        line-height: 1.5;
     }
     &__logo {
         border: none;
@@ -15,17 +24,16 @@
         margin-right: 8px;
     }
     &__menu {
-        width: calc(100% - 582px);
-        max-width: 433px;
-        text-align: center;
+        width: 100%;
+        max-width: 451px;
     }
     &__auth {
-        width: 304px;
         text-align: right;
     }
     &__reg-link {
         display: inline-block;
         margin-right: 30px;
+        line-height: 1.5;
         -webkit-appearance: none;
         border: none;
         text-decoration: none;
@@ -41,8 +49,8 @@
 }
 @include medium {
     .header {
-        &__auth {
-
+        &__menu {
+            max-width: 398px; 
         }
         &__reg-link {
             margin-right: 8px;

@@ -11,10 +11,14 @@
       max-width: 631px;
     }
     &__button-block {
-      display: flex;
-      justify-content: space-between;
       width: 100%;
-      max-width: 670px;   
+      max-width: 670px;
+      text-align: justify;
+      &:after {
+        content: '';
+        display: inline-block;
+        width: 100%;
+      }
     }
     &__button {
       font-size: 20px;
@@ -28,13 +32,19 @@
     }
     &__ndfl {
       padding-top: 119px;
-      width: calc(100% - 680px);
+      float: left;
+      @supports (display: flex) {
+        float: none;
+        width: calc(100% - 689px);
+      }
       padding-right: 9px;
     }
     &__hero-pic {
       width: 680px;
     }
   }
+
+
 
   @include medium {
     .first-1-st {
