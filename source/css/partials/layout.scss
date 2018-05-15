@@ -41,9 +41,47 @@ body {
   white-space: nowrap;
   padding-left: 27px;
   padding-right: 27px;
-  &--sm {
-    line-height: 38px;
-    height: 38px;
-    font-weight: 100;
+  line-height: 38px;
+  height: 38px;
+  font-weight: 100;
+  &--lg {
+    line-height: 60px;
+    height: 60px;
+    padding-left: 51px;
+    padding-right: 51px;
+    font-weight: 400;
+    letter-spacing: 1px;
+  }
+}
+.paragraph-text, .title {
+  color: $PC;
+}
+.paragraph-text {
+  font-size: 20px;
+}
+.title {
+  margin: 0;
+  &--h1 {
+    font-size: 60px;
+  }
+}
+.first-1-st {
+  padding-top: 52px;
+  padding-bottom: 82px;
+  &__title {
+    margin-bottom: 20px;
+  }
+  &__text {
+    margin-bottom: 81px;
+  }
+  &__button-block {
+    font-size: 0;
+  }
+  &__button {
+    font-size: 20px;
+    margin-right: 50px;
+    &:last-child {
+      margin-right: 0;
+    }
   }
 }
