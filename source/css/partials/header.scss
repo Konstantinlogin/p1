@@ -1,18 +1,27 @@
 .header {
     &__wrapper {
         border-bottom: 1px solid $GRAYC;
-        padding: $PAD;
-        width: calc(100% - #{$PAD*2});
-    }
-    &__logo {
-        border: none;
-        text-decoration: none;
     }
     &__container {
         display: flex;
         align-items: center;
-        min-height: 76px;
+        min-height: 90px;
         justify-content: space-between;
+    }
+    &__logo {
+        border: none;
+        text-decoration: none;
+        width: 278px;
+        margin-right: 8px;
+    }
+    &__menu {
+        width: calc(100% - 582px);
+        max-width: 433px;
+        text-align: center;
+    }
+    &__auth {
+        width: 304px;
+        text-align: right;
     }
     &__reg-link {
         display: inline-block;
@@ -29,5 +38,15 @@
     height: 25px;
     background: url(../images/logo.svg) no-repeat center;
     background-size: cover;
+}
+@include medium {
+    .header {
+        &__auth {
+
+        }
+        &__reg-link {
+            margin-right: 8px;
+        }
+     }
 }
 

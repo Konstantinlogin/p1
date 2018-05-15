@@ -1,0 +1,32 @@
+.paragraph-text, .title {
+    color: $PC;
+  }
+  .paragraph-text {
+    font-size: 20px;
+  }
+  .title {
+    margin: 0;
+    &--h1 {
+      font-size: 60px;
+    }
+  }
+  .decoration-text {
+    position: relative;
+    display: inline-block;
+    &:before {
+      content: '';
+      position: absolute;
+      z-index: 0;
+      bottom: 9px;
+      left: -5px;
+      width: calc(100% + 8px);
+      height: 6px;
+      border-radius: 20px;
+      background-color: rgba(255, 124, 29, 0.5);
+    }
+    &__content {
+      display: inline-block;
+      position: relative;
+      z-index: 1;
+    }
+  }

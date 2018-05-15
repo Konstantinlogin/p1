@@ -16,3 +16,12 @@
         color: $PC;
     }
 }
+@include medium {
+    .menu {
+        display: flex;
+        justify-content: space-between;
+        &__item {
+            margin-right: 16px;  
+        }
+    }
+}
