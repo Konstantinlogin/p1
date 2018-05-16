@@ -9,3 +9,7 @@ npm install
 
 ## Сборка production
 - npm run prod
+
+## Деплой
+- git subtree push --prefix bundle origin gh-pages
+
