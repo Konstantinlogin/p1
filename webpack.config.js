@@ -11,6 +11,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 const WebpackCleanupPlugin = require('webpack-cleanup-plugin');
 const AutoCleanBuildPlugin = require('webpack-auto-clean-build-plugin');
+const autoprefixer = require('autoprefixer');
 
 let env = process && process.env && process.env.NODE_ENV;
 let dev = !(env && env === 'production');
@@ -34,7 +35,6 @@ let webpack_path = [
         ]
     }
 ];
-
 
 let plugins = [
     // new webpack.ProvidePlugin({
@@ -61,12 +61,13 @@ let plugins = [
     new BrowserSyncPlugin({
         host: 'localhost',
         port: 3000,
-        server: { baseDir: ['bundle'] }
-    })
+        server: {baseDir: ['bundle']}
+    }),
+
 ];
 
 if (env === 'analizer') {
-    webpack_path.forEach(function (item, i) {
+    webpack_path.forEach(function(item, i) {
         item.plugins.push(new BundleAnalyzerPlugin({
             analyzerHost: '127.0.0.' + ++i
         }));
@@ -129,20 +130,32 @@ let baseConfig = {
                 }
             ]
         }, {
-            test: /\.sass$/,
+            test: /\.(css|scss|sass)$/,
             use: ExtractTextPlugin.extract({
+                fallback: 'style-loader',
                 use: [{
                     loader: 'css-loader', options: {
                         sourceMap: true,
                         url: false
                     }
                 }, {
-                    loader: 'sass-loader', options: {
-                        sourceMap: true,
-                        url: false
+                    loader: 'postcss-loader',
+                    options: {
+                        plugins: [
+                            autoprefixer({
+                                browsers:['ie >= 8', 'Safari 6', 'last 5 version']
+                            })
+                        ],
+                        sourceMap: true
                     }
-                }],
-                fallback: 'style-loader'
+                },
+                    {
+                        loader: 'sass-loader', options: {
+                            sourceMap: true,
+                            url: false
+                        }
+                    },
+                ]
             })
         }, {
             test: /\.(jpe?g|png|gif|svg)$/i,
