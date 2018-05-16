@@ -1,0 +1,8 @@
+.section-viber {
+    background: url(../images/viber-bg.jpg) no-repeat center;
+    background-size: cover;
+    &__contaniner {
+        max-width: 960px;
+        margin: 0 auto;
+    }
+}

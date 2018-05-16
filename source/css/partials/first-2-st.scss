@@ -1,0 +1,17 @@
+.first-2-st {
+    background-color: #ededed;
+    padding-top: 78px;
+    padding-bottom: 98px;
+    &__title {
+        text-align: center;
+        color: $PC;
+        margin-bottom: 47px;
+        font-weight: 600;
+    }
+
+}
+@include medium {
+    .first-2-st {
+
+    }
+}
