@@ -1,0 +1,75 @@
+$section-height: 180px;
+$background-color: $WC;
+$border-color: #dfdfdf;
+$icon-wrapper-width: 100px;
+$border-margin: 10px;
+$border-width: 2px;
+
+.scheme {
+    position: relative;
+    &__section {
+        height: $section-height;
+        &--left {
+            .scheme {
+                &__col {
+                   left: #{$border-width/2};
+                }
+                &__text-wrapper {
+                    left: 0;
+                }
+                &__icon-wrapper {
+                    right: - #{($icon-wrapper-width / 2) + ($border-margin/2) + ($border-width/2)};
+                }
+                &__col {
+                    border-right: 2px solid $border-color;
+                }
+            }
+        }
+        &--right {
+            .scheme {
+                &__col {
+                    right: #{$border-width/2};
+                }
+                &__text-wrapper {
+                    right: 0;
+                }
+                &__icon-wrapper {
+                    left: -#{($icon-wrapper-width / 2) + ($border-margin/2) + ($border-width/2)};
+                }
+                &__col {
+                    border-left: 2px solid $border-color;
+                }
+            }
+        }
+    }
+    &__col {
+        position: absolute;
+        width: 50%;
+        height: $section-height;
+        box-sizing: border-box;
+     }
+     &__text-wrapper {
+         position: absolute;
+         top: 0;
+         width: 50%;
+         max-width: 450px;
+     }
+     &__icon-wrapper {
+        position: absolute;
+        top: 0;
+        z-index: 2;
+        background: $background-color;
+        width: #{$icon-wrapper-width + $border-margin};
+        height: #{$icon-wrapper-width + ($border-margin*2)};
+        line-height: #{$icon-wrapper-width + ($border-margin*2)};
+        text-align: center;
+     }
+     &__icon-block {
+        display: inline-block;
+        vertical-align: middle;
+        width: $icon-wrapper-width;
+        height: $icon-wrapper-width;
+        border-radius: $icon-wrapper-width;
+        background-color: #ededed;
+     }
+}
