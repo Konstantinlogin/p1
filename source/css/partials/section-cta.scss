@@ -3,7 +3,7 @@
     background-size: cover; 
     &__container {
         box-sizing: border-box;
-        max-width: 910px;
+        max-width: 943px;
         padding-top: 68px;
         padding-bottom: 68px;
         min-height: 250px;
@@ -12,7 +12,7 @@
     &__title {
         font-size: 46px;
         font-weight: 400;
-        letter-spacing: 2.2px;
+        letter-spacing: 1.2px;
         margin-bottom: 15px;
     }
     &__title, &__text {
@@ -21,8 +21,7 @@
     &__text {
         line-height: 1.2;
         font-size: 18px;
-        font-weight: 100;
-        letter-spacing: .8px;
+        font-weight: 300;
     }
     &__item-left, &__item-right {
         display: inline-block;
