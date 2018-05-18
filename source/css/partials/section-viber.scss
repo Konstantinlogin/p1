@@ -1,8 +1,41 @@
 .section-viber {
     background: url(../images/viber-bg.jpg) no-repeat center;
     background-size: cover;
-    &__contaniner {
-        max-width: 960px;
+    &__container {
+        position: relative;
+        padding-top: 121px;
+        padding-bottom: 106px;
+        box-sizing: border-box;
+        width: 100%;
+        max-width: 986px;
+        min-height: 380px;
+        padding-right: 355px;
         margin: 0 auto;
     }
+    &__text {
+        font-size: 19px;
+        line-height: 1.5;
+        width: 100%;
+        max-width: 492px;
+    }
+    &__logo {
+        margin-bottom: 25px;
+    }
+    &__qr-block {
+        position: absolute;
+        right: $PAD;
+        bottom: 0;
+        width: 100%;
+        max-width: 355px;
+        height: 337px;
+        text-align: right;
+    }
+    &__qr-image {
+        display: inline-block;
+    }
+}
+.viber-logo {
+    width: 100%;
+    max-width: 355px;
+    display: inline-block;
 }

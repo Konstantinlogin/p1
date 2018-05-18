@@ -1,0 +1,42 @@
+.section-cta {
+    background: url(../images/cta-bg.jpg) no-repeat center;
+    background-size: cover; 
+    &__container {
+        box-sizing: border-box;
+        max-width: 910px;
+        padding-top: 68px;
+        padding-bottom: 68px;
+        min-height: 250px;
+        font-size: 0;
+    }
+    &__title {
+        font-size: 46px;
+        font-weight: 400;
+        letter-spacing: 2.2px;
+        margin-bottom: 15px;
+    }
+    &__title, &__text {
+        color: $WC;
+    } 
+    &__text {
+        line-height: 1.2;
+        font-size: 18px;
+        font-weight: 100;
+        letter-spacing: .8px;
+    }
+    &__item-left, &__item-right {
+        display: inline-block;
+    }
+    &__item-left {
+        width: 100%;
+        max-width: 472px;
+        margin-right: 16px
+    }
+    &__item-right {
+        width: 100%;
+        max-width: 280px;
+    }
+}
+.cta-form {
+    font-size: 15px;
+}
