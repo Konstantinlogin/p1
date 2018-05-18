@@ -1,13 +1,35 @@
 .section-cta {
     background: url(../images/cta-bg.jpg) no-repeat center;
-    background-size: cover; 
-    &__container {
-        box-sizing: border-box;
+    background-size: cover;
+    &__wrapper {
         max-width: 943px;
         padding-top: 68px;
         padding-bottom: 68px;
         min-height: 250px;
+    }
+    &__container {
+        box-sizing: border-box;
         font-size: 0;
+        text-align: justify;
+        max-width: 878px;
+        &:after {
+            content: '';
+            display: inline-block;
+            width: 100%;
+        }
+    }
+    &__item-left, &__item-right {
+        display: inline-block;
+        vertical-align: middle;
+    }
+    &__item-left {
+        width: 100%;
+        max-width: 472px;
+        margin-right: 16px
+    }
+    &__item-right {
+        width: 100%;
+        max-width: 280px;
     }
     &__title {
         font-size: 46px;
@@ -23,19 +45,25 @@
         font-size: 18px;
         font-weight: 300;
     }
-    &__item-left, &__item-right {
-        display: inline-block;
-    }
-    &__item-left {
-        width: 100%;
-        max-width: 472px;
-        margin-right: 16px
-    }
-    &__item-right {
-        width: 100%;
-        max-width: 280px;
-    }
 }
 .cta-form {
     font-size: 15px;
+    &__input {
+        background-color: #ffffff;
+        border: solid 1px #bbbbbb;
+        border-width: 1px 1px .25px 1px;
+        -webkit-appearance: none;
+        height: 38px;
+        line-height: 38px;
+        font-weight: 100;
+        padding: 0 11px 0 15px;
+        &:first-child {
+            border-radius: 5px 5px 0 0;
+            border-width: 1px 1px 0 1px;
+        }
+        &:last-child {
+            border-radius: 0 0 5px 5px;
+            border-width: 1px 1px 1px 1px;
+        }
+    }
 }
