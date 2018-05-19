@@ -3,3 +3,8 @@
       @content;
     }
 }
+@mixin medium-sm {
+  @media (max-width: 1120px) {
+    @content;
+  }
+}

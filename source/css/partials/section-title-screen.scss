@@ -23,8 +23,10 @@
     }
     &__button {
       margin-right: 8px;
+      margin-bottom: 16px;
       &:last-child {
         margin-right: 0;
+        margin-bottom: 0;
       }
     }
     &__grid {
@@ -54,25 +56,24 @@
     }
 }
 
-
-
-  @include medium {
-    .section-title-screen {
-        // &__grid {
-        //     align-items: center;
-        // }
-        // &__ndfl {
-        //     padding-top: 0;
-        //     width: 50%;
-        // }
-        // &__hero-pic {
-        //     width: 50%;
-        // }
-        // &__button-block {
-        //     display: block;
-        // }
-        // &__button {
-        //     margin-bottom: 20px;
-        // }
+@include medium {
+  .section-title-screen {
+    padding-bottom: 52px;
+    &__title {
+      padding-right: 18px;
     }
   }
+}
+@include medium-sm { 
+  .section-title-screen {
+    &__grid {
+      min-height: 534px;
+    }
+    &__ndfl {
+      padding-top: 0;
+    }
+    &__text {
+      margin-bottom: 46px;
+    }
+  }
+}

@@ -76,8 +76,25 @@
         }
     }
 }
-@include medium {
+@include medium-sm {
     .service-list {
-
+        &__price {
+            font-size: 28px;
+        }
+        &__icon-block {
+            right: 6px;
+            bottom: 23px;
+        }
+        &__item, &__item:nth-child(3n) {
+            margin-right: 2px;
+            width: 49%;
+            @supports (width: calc(50% - 2px)) {
+                width: calc(50% - 2px);
+            }
+        }
+        &__item:nth-child(2n) {
+            margin-right: 0;
+            width: 50%;
+        }
     }
 }
