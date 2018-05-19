@@ -9,6 +9,11 @@
     background-color: $background-color;
     position: relative;
 
+    &__title {
+        text-align: center;
+        margin-bottom: 58px;
+    }
+
     &__left-section, &__right-section {
         height: $section-height;
         .scheme {
@@ -33,6 +38,13 @@
     }
 
     &__left-section {
+        &--last {
+            .scheme {
+                &__col {
+                    border-color: transparent;
+                }
+            }
+        }
         .scheme {
             &__col {
                left: #{$border-width/2};
@@ -43,7 +55,7 @@
             }
             &__text {
                 border-width: #{$border-width/2} #{$border-width/2} #{$border-width/2} 6px;
-                padding: 28px 8px 26px 30px;
+                padding: 28px 26px 26px 30px;
                 &:after {
                     right: 8px;
                     transform: rotate(-31deg) skewX(25deg);
@@ -98,7 +110,7 @@
             }
             &__text {
                 border-width: #{$border-width/2} 6px #{$border-width/2} #{$border-width/2};
-                padding: 28px 8px 26px 30px;
+                padding: 28px 26px 26px 30px;
                 &:after {
                     left: 8px;
                     transform: rotate(145deg) skewX(20deg);
@@ -139,6 +151,13 @@
         &--color-6 {
             .scheme__text {
                 border-right-color: #f88c7e;
+            }
+        }
+        &--last {
+            .scheme {
+                &__col {
+                    border-left: $border-width solid transparent;
+                }
             }
         }
     }
@@ -189,4 +208,11 @@
         border-radius: $icon-wrapper-width;
         background-color: #ededed;
      }
+     &--last {
+        .scheme {
+            &__col {
+                border-left: $border-width solid transparent;
+            }
+        }
+    }
 }

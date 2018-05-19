@@ -62,15 +62,18 @@
     &__button {
         min-width: 176px;
         letter-spacing: 1px;
-        font-weight: 100;
     }
     &__icon-block {
         position: absolute;
         width: 75px;
         height: 55px;
-        right: 39px;
+        right: 30px;
         bottom: 30px;
         text-align: center;
+        .ic-education {
+            position: relative;
+            right: 12px;
+        }
     }
 }
 @include medium {

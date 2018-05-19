@@ -13,36 +13,42 @@
   <header class="header">
     <div class="header__wrapper">
       <div class="container header__container">
-        <a href="/" class="header__logo">
-          <i class="logo"></i>
-        </a>
-        <nav class="header__menu">
-          <ul class="menu">
-            <li class="menu__item">
-              <a href="#" class="menu__link">
-                Вычеты
-              </a>
-            </li>
-            <li class="menu__item">
-              <a href="#" class="menu__link">
-                Тарифы
-              </a>
-            </li>
-            <li class="menu__item">
-              <a href="#" class="menu__link">
-                О сервисе
-              </a>
-            </li>
-            <li class="menu__item">
-              <a href="#" class="menu__link">
-                Вопросы и ответы
-              </a>
-            </li>
-          </ul>
-        </nav>
-        <div class="header__auth">
-          <a href="#" class="header__reg-link">Регистрация</a>
-          <a href="#" class="button button--sm">Личный кабинет</a>
+        <div class="header__row">
+          <div class="header__logo-block">
+            <a href="#" class="logo header__logo"></a>
+          </div>
+          <div class="header__navigation-block">
+            <nav class="header__navigation">
+              <div class="header__row">
+                <ul class="menu header__menu">
+                  <li class="menu__item">
+                    <a href="#" class="menu__link">
+                      Вычеты
+                    </a>
+                  </li>
+                  <li class="menu__item">
+                    <a href="#" class="menu__link">
+                      Тарифы
+                    </a>
+                  </li>
+                  <li class="menu__item">
+                    <a href="#" class="menu__link">
+                      О сервисе
+                    </a>
+                  </li>
+                  <li class="menu__item">
+                    <a href="#" class="menu__link">
+                      Вопросы и ответы
+                    </a>
+                  </li>
+                </ul>
+                <div class="header__auth">
+                  <a href="#" class="header__reg-link">Регистрация</a>
+                  <a href="#" class="button button--sm">Личный кабинет</a>
+                </div>
+              </div>
+            </nav>
+          </div>
         </div>
       </div>
     </div>
@@ -222,24 +228,18 @@
         </div>
       </div>
     </section>
-    <div style="position: absolute; top: 0; right: 0;">
-      <!-- <i class="ic-scan"></i>  -->
-      <!-- <i class="ic-ndfl"></i> 
-        <i class="ic-lk"></i>
-        <i class="ic-find"></i>
-        <i class="ic-esign"></i>
-        <i class="ic-coins"></i> -->
-
-    </div>
     <section class="section section-scheme">
       <div class="container section-scheme__container">
         <div class="scheme">
+          <h2 class="title title--h2 scheme__title">
+              Преимущества Единого налогового центра
+          </h2>
           <div class="scheme__left-section scheme__left-section--color-1">
             <div class="scheme__col">
               <div class="scheme__top-line"></div>
               <div class="scheme__text-wrapper">
                 <div class="scheme__text">
-                    Только сканируйте и отправляйте необходимые документы
+                  Только сканируйте и отправляйте необходимые документы
                 </div>
               </div>
               <div class="scheme__icon-wrapper">
@@ -254,12 +254,82 @@
               <div class="scheme__top-line"></div>
               <div class="scheme__icon-wrapper">
                 <div class="scheme__icon-block">
-                  <i class="ic-some-icon scheme__icon"></i>
+                    <i class="ic-find"></i>
                 </div>
               </div>
               <div class="scheme__text-wrapper">
                 <div class="scheme__text">
-                  <span>Только сканируйте и ываыва необходимые документы</span>
+                  <span>
+                    Декларация 3-НДФЛ готовится и проверяется консультантом СВ
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="scheme__left-section scheme__left-section--color-3">
+            <div class="scheme__col">
+              <div class="scheme__top-line"></div>
+              <div class="scheme__icon-wrapper">
+                <div class="scheme__icon-block">
+                    <i class="ic-esign"></i>
+                </div>
+              </div>
+              <div class="scheme__text-wrapper">
+                <div class="scheme__text">
+                  <span>
+                    Выдача электронной подписи в крупнейшем уполномоченном ФНС удостоверяющем центре
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="scheme__right-section scheme__right-section--color-4">
+            <div class="scheme__col">
+              <div class="scheme__top-line"></div>
+              <div class="scheme__icon-wrapper">
+                <div class="scheme__icon-block">
+                    <i class="ic-ndfl"></i>
+                </div>
+              </div>
+              <div class="scheme__text-wrapper">
+                <div class="scheme__text">
+                  <span>
+                    Дистанционная подача декларации 3-НДФЛ в налоговую службу
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="scheme__left-section scheme__left-section--color-5">
+            <div class="scheme__col">
+              <div class="scheme__top-line"></div>
+              <div class="scheme__icon-wrapper">
+                <div class="scheme__icon-block">
+                    <i class="ic-lk"></i>
+                </div>
+              </div>
+              <div class="scheme__text-wrapper">
+                <div class="scheme__text">
+                  <span>
+                    Все операции производятся в Личном кабинете
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="scheme__right-section scheme__right-section--color-6 scheme__right-section--last">
+            <div class="scheme__col">
+              <div class="scheme__top-line"></div>
+              <div class="scheme__icon-wrapper">
+                <div class="scheme__icon-block">
+                  <i class="ic-coins"></i>
+                </div>
+              </div>
+              <div class="scheme__text-wrapper">
+                <div class="scheme__text">
+                  <span>
+                    После успешной проверки декларации ФНС производит вычет на указанный Вами счет (в течение 4 месяцев с момента подачи).
+                  </span>
                 </div>
               </div>
             </div>
