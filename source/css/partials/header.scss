@@ -161,7 +161,14 @@
     }
     body.mobile-menu-opened {
         overflow: hidden;
-        -webkit-backface-visibility:hidden;
+        -webkit-backface-visibility: hidden;
+        .header__wrapper {
+            position: fixed;
+            z-index: 2;
+            width: 100%;
+            top: 0;
+            left: 0;
+        }
     }
     .menu {
         text-align: center;
