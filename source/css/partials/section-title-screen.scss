@@ -1,4 +1,4 @@
-.first-1-st {
+.section-title-screen {
     padding-top: 52px;
     padding-bottom: 82px;
     &__title {
@@ -47,7 +47,7 @@
 
 
   @include medium {
-    .first-1-st {
+    .section-title-screen {
         &__grid {
             align-items: center;
         }
