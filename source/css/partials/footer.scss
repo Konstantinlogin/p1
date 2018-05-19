@@ -9,6 +9,8 @@
         white-space: nowrap;
     }
     &__logo {
+        position: relative;
+        bottom: 2px;
         display: inline-block;
         margin-right: 35px;
         vertical-align: middle;
@@ -27,5 +29,4 @@
         line-height: 1.5;
         white-space: normal;
     }
-
 }
