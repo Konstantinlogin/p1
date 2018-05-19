@@ -30,3 +30,26 @@
         white-space: normal;
     }
 }
+
+@include tablet { 
+    .footer {
+        &__container {
+            height: 60px;
+            line-height: 60px;
+        }
+    }
+}
+
+@include mobile {
+    .footer {
+        &__container {
+            text-align: center;
+        }
+        &__logo {
+          margin-right: 8px;  
+        }
+        &__copyright {
+            font-size: 12px;
+        }
+    }
+ }
