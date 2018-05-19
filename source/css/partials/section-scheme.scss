@@ -1,4 +1,7 @@
 .section-scheme {
     padding-top: 47px;
     padding-bottom: 140px;
+    &__container {
+        max-width: 1282px;
+    }
 }

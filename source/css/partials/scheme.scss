@@ -1,12 +1,13 @@
-$section-height: 180px;
-$background-color: $WC;
-$border-color: #dfdfdf;
-$icon-wrapper-width: 100px;
-$border-margin: 10px;
-$border-width: 2px;
-
 .scheme {
+    $section-height: 180px;
+    $background-color: $WC;
+    $border-color: #dfdfdf;
+    $icon-wrapper-width: 100px;
+    $border-margin: 10px;
+    $border-width: 2px;
+
     position: relative;
+    background-color: $background-color;
     &__section {
         height: $section-height;
         &--left {
@@ -16,6 +17,11 @@ $border-width: 2px;
                 }
                 &__text-wrapper {
                     left: 0;
+                    padding-right: #{$border-margin+5};
+                }
+                &__text {
+                    border-width: #{$border-width/2} #{$border-width/2} #{$border-width/2} 6px;
+                    padding: 28px 8px 26px 30px;
                 }
                 &__icon-wrapper {
                     right: - #{($icon-wrapper-width / 2) + ($border-margin/2) + ($border-width/2)};
@@ -32,6 +38,11 @@ $border-width: 2px;
                 }
                 &__text-wrapper {
                     right: 0;
+                    padding-left: #{$border-margin+5};
+                }
+                &__text {
+                    border-width: #{$border-width/2} 6px #{$border-width/2} #{$border-width/2};
+                    padding: 28px 8px 26px 30px;
                 }
                 &__icon-wrapper {
                     left: -#{($icon-wrapper-width / 2) + ($border-margin/2) + ($border-width/2)};
@@ -41,6 +52,54 @@ $border-width: 2px;
                 }
             }
         }
+        &--color-1 {
+            &.scheme__section--left {
+                border-left-color: #9df87e;
+            }
+            &.scheme__section--right {
+                border-right-color: #9df87e;
+            }
+        }
+        &--color-2 {
+            &.scheme__section--left {
+                border-left-color: #7e82f8;
+            }
+            &.scheme__section--right {
+                border-right-color: #7e82f8;
+            }
+        }
+        &--color-3 {
+            &.scheme__section--left {
+                border-left-color: #f8dd7e;
+            }
+            &.scheme__section--right {
+                border-right-color: #f8dd7e;
+            }
+        }
+        &--color-4 {
+            &.scheme__section--left {
+                border-left-color: #f57ef8;
+            }
+            &.scheme__section--right {
+                border-right-color: #f57ef8;
+            }
+        }
+        &--color-5 {
+            &.scheme__section--left {
+                border-left-color: #7ef8f8;
+            }
+            &.scheme__section--right {
+                border-right-color: #7ef8f8;
+            }
+        }
+        &--color-6 {
+            &.scheme__section--left {
+                border-left-color: #f88c7e;
+            }
+            &.scheme__section--right {
+                border-right-color: #f88c7e;
+            }
+        }
     }
     &__col {
         position: absolute;
@@ -48,16 +107,42 @@ $border-width: 2px;
         height: $section-height;
         box-sizing: border-box;
      }
-     &__text-wrapper {
+     &__top-line {
          position: absolute;
-         top: 0;
-         width: 50%;
-         max-width: 450px;
+         z-index: 1;
+         width: 100%;
+         left: 0;
+         top: 58.5px;
+         background-color: $border-color;
+         height: #{$border-width/2};
+     }
+     &__text-wrapper {
+         z-index: 2;
+         position: absolute;
+         top: 28px;
+         width: 100%;
+         max-width: 440px;
+         background-color: $background-color;
+     }
+     &__text-border {
+         display: inline-block;
+         width: 6px;
+         height: 100%;
+         background-color: $border-color;
+     }
+     &__text {
+         font-size: 20px;
+         border: solid $border-color;
+         border-radius: 7px;
+         font-size: 20px;
+         border-radius: 7px;
+         line-height: 1.3;
+         overflow: hidden;
      }
      &__icon-wrapper {
         position: absolute;
         top: 0;
-        z-index: 2;
+        z-index: 3;
         background: $background-color;
         width: #{$icon-wrapper-width + $border-margin};
         height: #{$icon-wrapper-width + ($border-margin*2)};
