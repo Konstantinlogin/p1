@@ -1,0 +1,31 @@
+.footer {
+    &__wrapper {
+        background-color: $WC;
+    }
+    &__container {
+        max-width: 386px;
+        height: 100px;
+        line-height: 100px;
+        white-space: nowrap;
+    }
+    &__logo {
+        display: inline-block;
+        margin-right: 35px;
+        vertical-align: middle;
+        font-size: 15px;
+    }
+    &__copyright-block {
+        display: inline-block;
+        vertical-align: middle;
+        white-space: normal;
+        text-align: right;
+    }
+    &__copyright {
+        font-weight: 100;
+        font-size: 15px;
+        color: $PC;
+        line-height: 1.5;
+        white-space: normal;
+    }
+
+}

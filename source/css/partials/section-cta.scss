@@ -3,8 +3,8 @@
     background-size: cover;
     &__wrapper {
         max-width: 943px;
-        padding-top: 68px;
-        padding-bottom: 68px;
+        padding-top: 56px;
+        padding-bottom: 47px;
         min-height: 250px;
     }
     &__container {
@@ -48,6 +48,14 @@
 }
 .cta-form {
     font-size: 15px;
+    &__input, &__submit {
+        box-sizing: border-box;
+        display: block;
+        width: 100%;
+    }
+    &__input-block {
+        margin-bottom: 20px;
+    }
     &__input {
         background-color: #ffffff;
         border: solid 1px #bbbbbb;
