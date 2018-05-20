@@ -157,11 +157,13 @@
         }
     }
     body.mobile-menu-opened {
+        height: 100%;
         overflow: hidden;
-        -webkit-backface-visibility: hidden;
+        width: 100%;
+        position: fixed;
         .header__wrapper {
             position: fixed;
-            z-index: 2;
+            z-index: 9999;
             width: 100%;
             top: 0;
             left: 0;
