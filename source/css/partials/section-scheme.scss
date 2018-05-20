@@ -5,3 +5,8 @@
         max-width: 1282px;
     }
 }
+@include mobile {
+    .section-scheme {
+        padding-bottom: 58px;  
+    }
+}

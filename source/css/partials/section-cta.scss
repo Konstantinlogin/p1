@@ -36,9 +36,11 @@
         font-weight: 400;
         letter-spacing: 1.2px;
         margin-bottom: 15px;
+        line-height: 1;
     }
     &__title, &__text {
         color: $WC;
+        text-align: left;
     } 
     &__text {
         line-height: 1.2;
@@ -73,5 +75,26 @@
             border-radius: 0 0 5px 5px;
             border-width: 1px 1px 1px 1px;
         }
+    }
+}
+@include medium-sm { 
+    .section-cta {
+        &__item-left {
+            margin-bottom: 15px;
+            max-width: 445px;
+        }
+    }
+}
+
+@include mobile { 
+    .section-cta {
+        &__container, &__title, &__text {
+            text-align: center;
+        }
+        &__item-left {
+            max-width: 100%;
+            margin-right: 0;
+        }
+
     }
 }
