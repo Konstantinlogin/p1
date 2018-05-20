@@ -85,9 +85,6 @@
      }
 }
 @include tablet {
-    section {
-        display: none!important;
-    }
     .header {
         &__row, &__navigation, &__container, &__menu, &__auth {
             display: block;

@@ -10,8 +10,12 @@
     }
 
 }
-@include medium {
+@include mobile {
     .section-service-list {
-
+        padding-top: 48px;
+        padding-bottom: 48px;
+        &__title {
+            font-size: 28px;
+        } 
     }
 }
