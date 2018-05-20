@@ -40,3 +40,29 @@
     height: 39px;
     display: inline-block;
 }
+
+@include mobile {
+    .section-viber {
+        &__container {
+          padding-right: $PAD;
+          padding-bottom: 0;
+          text-align: center;
+          min-height: 0;
+        }
+        &__qr-block {
+            position: relative;
+            text-align: center;
+            max-width: 100%;
+            height: auto;
+            font-size: 0;
+            right: 0;
+        }
+        &__text {
+            max-width: 100%;
+            margin-bottom: 17px;
+        }
+        &__qr-image {
+            width: 200px;
+        }
+    }
+}

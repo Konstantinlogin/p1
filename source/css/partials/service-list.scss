@@ -100,11 +100,6 @@
 }
 
 @include mobile {
-    section {
-        &:not(.section-service-list):not(.section-title-screen) {
-            display: none!important;
-        }
-    }
     .service-list {
         &__item, &__item:nth-child(2n), &__item:nth-child(3n) {
             width: 100%;
