@@ -82,7 +82,7 @@
   .section-title-screen {
     &__grid {
       min-height: 0;
-      background: url(../images/Hero-pic.svg) no-repeat center;
+      background: url($IMAGES_PATH + 'Hero-pic.svg') no-repeat center;
       background-size: contain;
       padding: 0;
     }

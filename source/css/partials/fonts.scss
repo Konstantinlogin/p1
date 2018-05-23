@@ -1,65 +1,65 @@
 @font-face {
 	font-family: 'Geometria';
-	src: url('../fonts/Geometria.eot');
+	src: url($FONT_PATH + 'Geometria.eot');
 	src: local('Geometria'),
-		url('../fonts/Geometria.eot?#iefix') format('embedded-opentype'),
-		url('../fonts/Geometria.woff') format('woff'),
-		url('../fonts/Geometria.ttf') format('truetype');
+		url($FONT_PATH + 'Geometria.eot?#iefix') format('embedded-opentype'),
+		url($FONT_PATH + 'Geometria.woff') format('woff'),
+		url($FONT_PATH + 'Geometria.ttf') format('truetype');
 	font-weight: normal;
 	font-style: normal;
 }
 
 @font-face {
 	font-family: 'Geometria';
-	src: url('../fonts/Geometria/Bold.eot');
-	src: local('Geometria Bold'), local('../fonts/Geometria/Bold'),
-		url('../fonts/Geometria/Bold.eot?#iefix') format('embedded-opentype'),
-		url('../fonts/Geometria/Bold.woff') format('woff'),
-		url('../fonts/Geometria/Bold.ttf') format('truetype');
+	src: url($FONT_PATH + 'Geometria/Bold.eot');
+	src: local('Geometria Bold'), local($FONT_PATH + 'Geometria/Bold'),
+		url($FONT_PATH + 'Geometria/Bold.eot?#iefix') format('embedded-opentype'),
+		url($FONT_PATH + 'Geometria/Bold.woff') format('woff'),
+		url($FONT_PATH + 'Geometria/Bold.ttf') format('truetype');
 	font-weight: 500;
 	font-style: normal;
 }
 
 @font-face {
 	font-family: 'Geometria';
-	src: url('../fonts/Geometria/Medium.eot');
-	src: local('Geometria Medium'), local('../fonts/Geometria/Medium'),
-		url('../fonts/Geometria/Medium.eot?#iefix') format('embedded-opentype'),
-		url('../fonts/Geometria/Medium.woff') format('woff'),
-		url('../fonts/Geometria/Medium.ttf') format('truetype');
+	src: url($FONT_PATH + 'Geometria/Medium.eot');
+	src: local('Geometria Medium'), local($FONT_PATH + 'Geometria/Medium'),
+		url($FONT_PATH + 'Geometria/Medium.eot?#iefix') format('embedded-opentype'),
+		url($FONT_PATH + 'Geometria/Medium.woff') format('woff'),
+		url($FONT_PATH + 'Geometria/Medium.ttf') format('truetype');
 	font-weight: 400;
 	font-style: normal;
 }
 
 @font-face {
 	font-family: 'Geometria';
-	src: url('../fonts/Geometria/Light.eot');
-	src: local('Geometria Light'), local('../fonts/Geometria/Light'),
-		url('../fonts/Geometria/Light.eot?#iefix') format('embedded-opentype'),
-		url('../fonts/Geometria/Light.woff') format('woff'),
-		url('../fonts/Geometria/Light.ttf') format('truetype');
+	src: url($FONT_PATH + 'Geometria/Light.eot');
+	src: local('Geometria Light'), local($FONT_PATH + 'Geometria/Light'),
+		url($FONT_PATH + 'Geometria/Light.eot?#iefix') format('embedded-opentype'),
+		url($FONT_PATH + 'Geometria/Light.woff') format('woff'),
+		url($FONT_PATH + 'Geometria/Light.ttf') format('truetype');
 	font-weight: 300;
 	font-style: normal;
 }
 
 @font-face {
 	font-family: 'Geometria';
-	src: url('../fonts/Geometria/ExtraLight.eot');
-	src: local('Geometria ExtraLight'), local('../fonts/Geometria/ExtraLight'),
-		url('../fonts/Geometria/ExtraLight.eot?#iefix') format('embedded-opentype'),
-		url('../fonts/Geometria/ExtraLight.woff') format('woff'),
-		url('../fonts/Geometria/ExtraLight.ttf') format('truetype');
+	src: url($FONT_PATH + 'Geometria/ExtraLight.eot');
+	src: local('Geometria ExtraLight'), local($FONT_PATH + 'Geometria/ExtraLight'),
+		url($FONT_PATH + 'Geometria/ExtraLight.eot?#iefix') format('embedded-opentype'),
+		url($FONT_PATH + 'Geometria/ExtraLight.woff') format('woff'),
+		url($FONT_PATH + 'Geometria/ExtraLight.ttf') format('truetype');
 	font-weight: 200;
 	font-style: normal;
 }
 
 @font-face {
 	font-family: 'Geometria';
-	src: url('../fonts/Geometria/Thin.eot');
-	src: local('Geometria Thin'), local('../fonts/Geometria/Thin'),
-		url('../fonts/Geometria/Thin.eot?#iefix') format('embedded-opentype'),
-		url('../fonts/Geometria/Thin.woff') format('woff'),
-		url('../fonts/Geometria/Thin.ttf') format('truetype');
+	src: url($FONT_PATH + 'Geometria/Thin.eot');
+	src: local('Geometria Thin'), local($FONT_PATH + 'Geometria/Thin'),
+		url($FONT_PATH + 'Geometria/Thin.eot?#iefix') format('embedded-opentype'),
+		url($FONT_PATH + 'Geometria/Thin.woff') format('woff'),
+		url($FONT_PATH + 'Geometria/Thin.ttf') format('truetype');
 	font-weight: 100;
 	font-style: normal;
 }

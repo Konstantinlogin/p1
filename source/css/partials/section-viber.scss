@@ -1,5 +1,5 @@
 .section-viber {
-    background: url(../images/viber-bg.jpg) no-repeat center;
+    background: url($IMAGES_PATH + 'viber-bg.jpg') no-repeat center;
     background-size: cover;
     &__container {
         position: relative;

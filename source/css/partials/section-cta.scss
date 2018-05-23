@@ -1,5 +1,5 @@
 .section-cta {
-    background: url(../images/cta-bg.jpg) no-repeat center;
+    background: url($IMAGES_PATH + 'cta-bg.jpg') no-repeat center;
     background-size: cover;
     &__wrapper {
         max-width: 943px;
