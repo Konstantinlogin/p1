@@ -1,21 +1,45 @@
 @import partials/_variables
 @import partials/_mixins
 @import partials/normalize
-@import partials/layout
 @import partials/fonts
-@import partials/typography
-@import partials/icons
-@import partials/menu
 @import partials/menu-btn
 
-@import partials/header
-@import partials/footer
-@import partials/section-title-screen
-@import partials/section-service-list
-@import partials/service-list
-@import partials/section-viber
-@import partials/section-scheme
-@import partials/scheme
-@import partials/section-cta
+.nalogi-override-html
+    font-size: 100%$i;
+    font-family: 'Geometria', sans-serif$i;
+    color: $PC$i;
+    .hidden 
+        display: none$i;
+    .nalogi-override-body
+        width: 100%$i;
+        height: 100%$i;
+        font-family: 'Geometria', sans-serif$i;
+        font-style: normal$i;
+        @import partials/blocks
+        @import partials/typography
+        @import partials/icons
+        @import partials/menu
+        @import partials/header
+        @import partials/footer
+        @import partials/section-title-screen
+        @import partials/section-service-list
+        @import partials/service-list
+        @import partials/section-viber
+        @import partials/section-scheme
+        @import partials/scheme
+        @import partials/section-cta
+        &.mobile-menu-opened
+            @include tablet 
+                height: 100%;
+                overflow: hidden;
+                width: 100%;
+                position: fixed;
+                padding-top: 61px;
+                .header__wrapper
+                    position: fixed;
+                    z-index: 9999;
+                    width: 100%;
+                    top: 0;
+                    left: 0;
 
 

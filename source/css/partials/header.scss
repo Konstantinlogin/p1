@@ -17,10 +17,43 @@
     &__container, &__navigation {
         display: table;
         height: 89px;
-
     }
     &__navigation {
         width: 100%;
+        &--align-right {
+
+            @media screen and (min-width: 1024px) {
+                display: block;
+                text-align: right;
+                .header__row {
+                    display: block;
+                    text-align: right;
+                    height: 89px;
+                    line-height: 89px;
+                    .header__menu {
+                        padding-right: 0;
+                    }
+                    .header__menu, .header__auth {
+                        display: inline-block;
+                        line-height: 1.5;
+                    }
+                    .menu__item {
+                        &:last-child {
+                            margin-right: 32px;
+                        }
+                    }
+                }  
+            }
+            @media screen and (max-width: 1364px) { 
+                .header__row {
+                    .menu__item {
+                        &:last-child {
+                            margin-right: 15px;
+                        }
+                    } 
+                }
+            }
+        }
     }
     &__row {
         display: table-row;
@@ -154,19 +187,6 @@
         &__auth {
             text-align: center;
             margin: 0 auto;
-        }
-    }
-    body.mobile-menu-opened {
-        height: 100%;
-        overflow: hidden;
-        width: 100%;
-        position: fixed;
-        .header__wrapper {
-            position: fixed;
-            z-index: 9999;
-            width: 100%;
-            top: 0;
-            left: 0;
         }
     }
     .menu {
