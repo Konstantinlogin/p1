@@ -58,23 +58,46 @@
     &__input-block {
         margin-bottom: 20px;
     }
-    &__input {
-        background-color: #ffffff;
-        border: solid 1px #bbbbbb;
-        border-width: 1px 1px .25px 1px;
-        -webkit-appearance: none;
+    &__input-container {
+        background: transparent;
+        box-sizing: border-box;
+        font-weight: 300;
         height: 38px;
         line-height: 38px;
-        font-weight: 300;
-        padding: 0 11px 0 15px;
+        position: relative;
+        input {
+            border: 1px solid #bbbbbb$i;
+            font-size: 15px$i;
+            box-sizing: border-box$i;
+            padding: 0 11px 0 15px$i;
+            width: 100%$i;
+            font-weight: 300$i;
+            height: 38px$i;
+            line-height: 38px$i;
+            -webkit-appearance: none;
+        }
+    }
+    &__input-section {
         &:first-child {
-            border-radius: 5px 5px 0 0;
-            border-width: 1px 1px 0 1px;
+            input {
+                border-radius: 5px 5px 0 0;
+                border-width: 1px 1px 0 1px;
+            }
+  
         }
         &:last-child {
-            border-radius: 0 0 5px 5px;
-            border-width: 1px 1px 1px 1px;
+            input {
+                border-radius: 0 0 5px 5px;
+                border-width: 1px 1px 1px 1px;
+            }
         }
+    }
+    &__error {
+        color: red;
+        line-height: 1.5;
+        position: absolute;
+        bottom: -20px;
+        left: 15px;
     }
 }
 @include medium-sm { 

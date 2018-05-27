@@ -17,8 +17,8 @@
         }
     }
     &__link {
-        text-decoration: none;
-        color: $PC;
+        text-decoration: none$i;
+        color: $PC!important;
     }
 }
 @include medium {

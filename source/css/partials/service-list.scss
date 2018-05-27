@@ -30,10 +30,10 @@
           background-color: $BTC;
           .service-list {
               &__title, &__sub-title, &__price {
-                  color: $WC;
+                  color: $WC!important;
               }
               &__button {
-                  color: $PC;
+                  color: $PC!important;
                   background-color: $WC;
               }
             

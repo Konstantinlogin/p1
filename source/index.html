@@ -8,6 +8,7 @@
   <title>Document</title>
   <link rel="stylesheet" href="css/project.css" />
 </head>
+
 <body class="nalogi-override-body">
   <header class="header">
     <div class="header__wrapper">
@@ -248,8 +249,7 @@
               <div class="scheme__text-wrapper">
                 <div class="scheme__text">
                   <span>
-                    Только сканируйте и отправляйте 
-                    необходимые документы
+                    Только сканируйте и отправляйте необходимые документы
                   </span>
                 </div>
               </div>
@@ -360,15 +360,38 @@
             </p>
           </div>
           <div class="section-cta__item-right">
-            <form class="cta-form">
+            <div class="cta-form">
               <div class="cta-form__input-block">
-                <input type="text" class="input cta-form__input" placeholder="Имя">
-                <input type="text" class="input cta-form__input" placeholder="Номер телефона">
+                <div class="cta-form__input-section" id="P100_NAME_CONTAINER">
+                  <div class="hidden">
+                    <label for="P100_NAME" id="P100_NAME_LABEL" class="t-Form-label u-VisuallyHidden">Name</label>
+                  </div>
+                  <div class="cta-form__input-container">
+                    <input type="text" id="P100_NAME" name="P100_NAME" placeholder="Ваше имя" class="text_field apex-item-text"
+                      value="" size="30" maxlength="">
+                    <span id="P100_NAME_error_placeholder" class="a-Form-error" data-template-id="13813308260567383_ET"></span>
+                  </div>
+                </div>
+                <div class="cta-form__input-section" id="P100_PHONE_CONTAINER">
+                  <div class="hidden">
+                    <label for="P100_PHONE" id="P100_PHONE_LABEL" class="t-Form-label u-VisuallyHidden">Phone</label>
+                  </div>
+                  <div class="cta-form__input-container">
+                    <input type="text" id="P100_PHONE" name="P100_PHONE" required="" aria-required="true" placeholder="Телефон"
+                      aria-invalid="true" aria-describedby="P100_PHONE_error" class="text_field apex-item-text apex-page-item-error"
+                      value="" size="30" maxlength="">
+                    <span class="cta-form__error">
+                      <div id="P100_PHONE_error">Phone должен быть заполнен.</div>
+                    </span>
+                  </div>
+                </div>
               </div>
-              <div class="input cta-form__submit-block">
-                <input type="submit" class="button cta-form__submit" placeholder="Отправить">
+              <div class="cta-form__submit-block">
+                <button onclick="apex.submit({request:'send_me'});" class="button cta-form__submit" type="button" id="B13309239944615917">
+                  Отправить
+                </button>
               </div>
-            </form>
+            </div>
           </div>
         </div>
       </div>

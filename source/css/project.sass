@@ -11,10 +11,15 @@
     .hidden 
         display: none$i;
     .nalogi-override-body
+        line-height: 1.5$i;
         width: 100%$i;
         height: 100%$i;
         font-family: 'Geometria', sans-serif$i;
         font-style: normal$i;
+        h1, h2, h3, h4, h5, h6, p, span
+            -webkit-font-smoothing: auto;
+        li 
+            line-height: 1.5$i;
         @import partials/blocks
         @import partials/typography
         @import partials/icons

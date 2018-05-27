@@ -9,7 +9,8 @@
     background-size: cover;
 }
 .header {
-
+    margin: 0 auto$i;
+    padding: 0$i;
     &__wrapper {
         border-bottom: 1px solid $GRAYC;
         background-color: $WC;
@@ -83,7 +84,7 @@
         -webkit-appearance: none;
         border: none;
         text-decoration: none;
-        color: $PC;
+        color: $PC!important;
     }
     &__mobile-btn-block {
         display: none;

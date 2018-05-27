@@ -12,7 +12,8 @@ let onKeyDown = function (evt) {
 
 let onBodyClick = function (evt) {
     evt = evt || window.event;
-    if (evt.target.classList.contains('menu__link')) {
+    let targetHref = evt.target.getAttribute('href');
+    if (/^#/.test(targetHref) || evt.target.classList.contains('menu__link')) {
         closeMenu();
     }
 };
